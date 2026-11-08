@@ -104,9 +104,9 @@ export default function Game({ state, setState, onEnd, onTitle, sfx, muted, onTo
 
       <div className="mx-auto grid max-w-7xl gap-3 lg:grid-cols-[1fr_380px]">
         {/* Map: the hero of the screen, with a thin travel ribbon under it. */}
-        <section className="frame overflow-hidden rounded-lg" aria-label="The road west">
+        <section className="frame self-start overflow-hidden rounded-lg" aria-label="The road west">
           <div className="relative z-10">
-            <div className="relative overflow-hidden bg-surface-2">
+            <div className="relative h-[40vh] min-h-[220px] max-h-[480px] overflow-hidden bg-surface-2 lg:h-[52vh]">
               <RouteMap state={state} />
             </div>
             <div className="relative h-14 overflow-hidden border-t border-line sm:h-16">
