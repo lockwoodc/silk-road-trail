@@ -73,3 +73,4 @@ Your space's web ports aren't exposed to the internet directly. To preview a web
 - Stuck or curious? **Ask Sparky.** It knows this environment and can do the work for you.
 
 Happy building! ✦
+- Live game: play link via SparkCloud Launch
