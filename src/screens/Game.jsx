@@ -106,10 +106,10 @@ export default function Game({ state, setState, onEnd, onTitle, sfx, muted, onTo
         {/* Map: the hero of the screen, with a thin travel ribbon under it. */}
         <section className="frame self-start overflow-hidden rounded-lg" aria-label="The road west">
           <div className="relative z-10">
-            <div className="relative h-[40vh] min-h-[220px] max-h-[480px] overflow-hidden bg-surface-2 lg:h-[52vh]">
+            <div className="relative h-[34vh] min-h-[200px] max-h-[380px] overflow-hidden bg-surface-2 lg:h-[44vh]">
               <RouteMap state={state} />
             </div>
-            <div className="relative h-14 overflow-hidden border-t border-line sm:h-16">
+            <div className="relative h-28 overflow-hidden border-t border-line sm:h-36">
               <CaravanScene className="absolute inset-0 h-full w-full" weather={state.weather === 'rain' ? 'rain' : state.weather === 'snow' ? 'snow' : 'clear'} />
               <div className="absolute inset-0 bg-gradient-to-t from-bg/50 to-transparent" />
               <div className="relative flex h-full items-center gap-3 px-3">
