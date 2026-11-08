@@ -112,7 +112,7 @@ export default function Game({ state, setState, onEnd, onTitle, sfx, muted, onTo
             <div className="relative h-28 overflow-hidden border-t border-line sm:h-36">
               <CaravanScene className="absolute inset-0 h-full w-full" weather={state.weather === 'rain' ? 'rain' : state.weather === 'snow' ? 'snow' : 'clear'} />
               <div className="absolute inset-0 bg-gradient-to-t from-bg/50 to-transparent" />
-              <div className="relative flex h-full items-center gap-3 px-3">
+              <div className="relative flex h-full items-end gap-3 px-3 pb-3">
                 <span className="smallcaps flex shrink-0 items-center gap-1.5 text-xs text-ink-2">
                   <Icon name={state.weather === 'clear' ? 'sun' : state.weather} size={13} className="text-gold" />
                   {weatherName(state.weather)} · {seasonOf(state)}

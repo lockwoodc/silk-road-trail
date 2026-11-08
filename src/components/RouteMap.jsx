@@ -84,6 +84,7 @@ export default function RouteMap({ state, compact = false }) {
     <svg
       viewBox={`0 0 ${VB_W} ${VB_H}`}
       className="h-full w-full"
+      preserveAspectRatio="xMidYMid slice"
       role="img"
       aria-label={`Map of the Silk Roads from Chang'an to Venice. The caravan is between ${STOPS[legIndex].name} and ${STOPS[legIndex + 1].name}.`}
     >
